@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WEB SITE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+    <div class="main">
+        <ul>
+                <li class="active"><a href='https://www.imdb.com/name/nm3627601/'>TBT</a></li>
+                <li><a href='#'>MOVIES</a></li>
+                <li><a href='#'>AWARDS</a></li>
+         </ul>
+        </div>
+    </header>
+       <div id="information">
+            <img src="images/mm.jpg" class="image">
+        </div>
+        <div class="text-box">
+            <h1>SUTTON BRADY</h1>
+            <p>The Bold Type</p>
+            <a href="https://www.netflix.com/in/title/80176085" class="hero">NETFLIX</a>
+        </div>
+        <div class="content">
+            <div class="right-col">
+                <p>Click Here</p>
+                <img src="images/play.png" id="icon">
+            </div>
+        </div>
+        <audio id="mySong">
+            <source src="images/song.mp3" type="audio/mp3"> 
+        </audio>
+        <script>
+            var mySong = document.getElementById("mySong");
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                if(mySong.paused){
+                    mySong.play();
+                    icon.src = "images/pause.png";
+                }else{
+                    mySong.pause();
+                    icon.src = "images/play.png";
+
+                }
+            }
+        </script>    
+    
+    </body>
+
+</html>

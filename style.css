@@ -1,0 +1,119 @@
+* {
+		margin: 0;
+		padding: 0;
+        font-family: sans-serif;
+	}
+
+body{
+    background-image: url(images/bb.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed ;
+    background-size: cover;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+
+ul{
+    list-style-type: none;
+    float: right;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: #5499C7;
+    color: #000; 
+}
+ul li.active a{
+    background-color: #5499C7;
+    color: #000; 
+}
+.main{
+    max-width: 1500px;
+    margin: auto;
+}
+
+
+#information{
+    width: 200px;
+  height: 200px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image{
+    padding-right: 10px;
+
+}
+    
+.text-box{
+    width: 90%;
+    color: 	#bf00ff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.text-box h1{
+    font-size: 70px;
+    color: rgb(53, 2, 2);
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #300230;
+}
+.hero{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: red;
+    position: relative;
+    cursor: pointer;
+
+}
+.hero:hover{
+    border: 1px solid #fff;
+    background: #fff;
+    transition: 1s;
+}
+
+/* .content{
+    display: block;
+    margin-top: 2em;
+    float: top;
+
+} */
+.right-col{
+    float: right;
+    margin-right: 5%;
+    margin-top:120px;
+    display: flex;
+    align-items: center;
+}
+.right-col p{
+    font-size: 20px;
+    color: rgb(107, 7, 65);
+    font-weight: 400;
+    margin-right: 10px;
+}
+#icon{
+    width: 80px;
+    cursor: pointer;
+
+}
